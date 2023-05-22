@@ -5,7 +5,7 @@ pipeline
     agent any
     stages
     {
-        stage("Continouse-Download")
+        stage("Continouse-Download_Lone")
         {
             steps
             {
@@ -20,7 +20,7 @@ pipeline
             
         }
         
-        stage("Continouse-Build")
+        stage("Continouse-Build_Lone")
         {
             steps
             {
