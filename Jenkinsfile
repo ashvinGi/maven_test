@@ -36,67 +36,15 @@ pipeline
             
         }
         
-        stage("Continouse-Deploy")
-        {
-            steps
-            {
-                script
-                {
-                    
-                 cicd.newDeploy("${JOB_NAME}","172.31.47.227","testapp")
-                    
-                    
-                }
-                
-            }
-            
-        }
         
-         stage("Continouse-Selinium-Download")
-        {
-            steps
-            {
-                script
-                {
-                    
-                 cicd.newGit("https://github.com/ashvinGi/FunctionalTesting.git")
-                    
-                    
-                }
-                
-            }
             
         }
-        stage("Continouse-Test")
-        {
-            steps
-            {
-                script
-                {
-                    
-                 cicd.newTest("${JOB_NAME}")
-                    
-                    
-                }
-                
-            }
-            
-        }
-         stage("Continouse-Delivery")
-        {
-            steps
-            {
-                script
-                {
-                    
-                 cicd.newDeploy("${JOB_NAME}","172.31.47.227","prodapp")
-                    
-                    
-                }
-                
-            }
-            
-        }     
     }
       
-}
+
+
+
+
+
+
+
