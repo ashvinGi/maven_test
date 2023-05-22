@@ -1,0 +1,15 @@
+pipline
+{
+agent any
+ stages
+ {
+ stage("continuse-download")
+ {
+   steps
+   {
+    git 'https://github.com/ashvinGi/maven.git'
+   
+   }
+ }
+ }
+}
